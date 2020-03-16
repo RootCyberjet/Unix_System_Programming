@@ -1,0 +1,5 @@
+A write to stdout
+Before fork
+PID = 1947, global_var = 7, var = 89
+Before fork
+PID = 1946, global_var = 6, var = 88
