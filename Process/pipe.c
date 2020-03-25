@@ -26,12 +26,10 @@ void main()
 				close(fd[1]);
 				n = read(fd[0], buf, 100);
 				write(STDOUT_FILENO, buf, n);
-				exit(10);
 				break;
 			}
 		default:
 			{
-				wait(&stat);
 				printf("I'm parent process...\n");
 				printf("Child's exit status : %d\n",WEXITSTATUS(stat));
 				close(fd[0]);
